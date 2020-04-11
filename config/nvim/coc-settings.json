@@ -1,0 +1,15 @@
+{
+"languageserver": {
+	"reason":{
+		"command": "/usr/local/bin/reason-language-server.exe",
+		"rootPatterns": ["package.json","bsconfig.json",".git/"],
+		"filetypes": ["reason"]
+	},
+
+	"golang": {
+		"command": "gopls",
+		"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+		"filetypes": ["go"]
+	}
+}
+}
