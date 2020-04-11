@@ -1,0 +1,29 @@
+- defaults:
+    link: 
+        relink: true
+
+- clean: ['~']
+
+- defaults:
+    link:
+        if: [[ "$(uname)" == "Linux"]]
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+- defaults:
+    link:
+
+- link:
+    ~/.gitconfig: gitconfig
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+
