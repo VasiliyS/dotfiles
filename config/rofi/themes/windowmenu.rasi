@@ -1,0 +1,58 @@
+/**
+ * This theme is intended for a floating window changer
+ */
+@import "shared/settings.rasi"
+* {
+  background-color: @background;
+  text-color: @foreground-list;
+  font: @text-font;
+}
+#window {
+  fullscreen: false;
+  width: 40%;
+  height: 0;
+}
+#listview {
+  columns: 1;
+  cycle: true;
+  lines: 5;
+  scrollbar: true;
+  scrollbar-width: 3;
+}
+inputbar,
+prompt,
+textbox-prompt-colon,
+entry {
+  background-color: @background-light;
+}
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+  margin: @inputbar-margin;
+}
+#prompt {
+  padding: @prompt-padding;
+  background-color: @accent;
+  text-color: @background;
+}
+#textbox-prompt-colon {
+  expand: false;
+  str: "  : :  ";
+  padding: @apps-textbox-prompt-colon-padding;
+}
+#entry {
+  text-color: @accent;
+  padding: @entry-padding;
+}
+#element {
+  padding: @list-element-padding;
+  margin: @list-element-margin;
+  border: @list-element-border;
+  background-color: @background-light;
+  border-color: @background-light;
+}
+#element.selected {
+  background-color: @background-focus;
+  text-color: @accent;
+  border-color: @accent;
+}
+/* vim:ft=css
