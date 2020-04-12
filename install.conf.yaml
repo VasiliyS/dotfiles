@@ -24,6 +24,11 @@
     ~/.config/rofi: config/rofi/
     ~/.config/termite: config/termite/
 
+- defaults:
+    link:
+        if: '[[ `uname` == "Darwin" ]]'
+- link:
+    "~/Library/Application Support/Code/User/settings.json": vscode/settings.json
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
