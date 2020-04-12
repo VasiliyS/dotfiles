@@ -7,7 +7,7 @@
 #clickable_url = true
 #dynamic_title = true
 #font = Inconsolata, Regular 10
-font = Cascadia Code, Regular 9
+font = Cascadia Code PL, Regular 9
 #font = DejaVu Sans Mono, Regular 9
 #fullscreen = true
 #icon_name = terminal

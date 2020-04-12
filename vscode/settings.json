@@ -3,7 +3,7 @@
     "telemetry.enableCrashReporter": false,
     "workbench.iconTheme": "vscode-icons",
     "editor.minimap.renderCharacters": false,
-    "workbench.colorTheme": "Solarized Custom Dark",
+    "workbench.colorTheme": "Solarized Dark+",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": true,
     "reason_language_server.useOldDuneProcess": false,
@@ -15,5 +15,7 @@
     "go.useLanguageServer": true,
     "svelte.language-server.runtime": "/usr/local/bin/node",
     "editor.fontFamily": "'Cascadia Code PL', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true ,
+    "editor.fontLigatures": true,
+    "vscode-neovim.neovimPath": "/usr/bin/nvim",
+    "vsicons.dontShowNewVersionMessage": true,
 }
